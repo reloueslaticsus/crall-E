@@ -1,2 +1,2 @@
 # Crawl-E
-the web's friendly and free web crawler
+the web's free and friendly web crawler
