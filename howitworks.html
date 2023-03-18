@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <header>
+            <h1>CRALL-E</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" title="The home page">Home</a></li>
+                    <li><a href="./about.html" title="The about page">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p>
+                The crawler service takes a web address provided by the user,
+                validates and cleans it, and then sends it to the backend for processing.
+                Once received, the backend puts the request into a shared work queue that multiple
+                crawler processes work on. A crawler process will take the link and find all internal
+                links on the page before putting those into the shared queue. It's by doing this that we 
+                can acheive faster crawl speeds for larger webpages. As each crawler explores a link, they 
+                will also contribute to a stored graph structure that is tied to the ID of the original request. 
+                Once the graph is built, several well known algorithms will be ran over the graph to gather 
+                data before sending a response to the user. The data is presented in a way that the user can readily
+                understand without having to know a ton of technical information.
+            </p>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="./contact.html" title="contact information">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
